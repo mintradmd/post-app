@@ -1,10 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&family=Raleway:wght@100&display=swap');
+
 body {
   margin: 0;
+  font-family: 'Nunito', sans-serif, 'Raleway';
   
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  padding: 10px 10px;
 }
 
-code {
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:100vw;
+  height:100%;
+  justify-content: center;
+}
+
+.posts-container {
+
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
  
+}
+.post-container{
+  padding: 10px;
+  flex-wrap: auto;
+  margin:10px;
+  box-shadow:2px 2px 5px lightgrey;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.post-container:hover{
+  cursor: pointer;
 }

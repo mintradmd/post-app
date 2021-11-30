@@ -14,7 +14,7 @@ const Posts=(props)=> {
 
     }, [])
 
-    return <div data-testid='posts'>
+    return <div data-testid='posts' className='posts-container'>
         {posts && posts.map((post, index) => <div key={index}> <Post index={index} post={post}/> </div>)}
     </div>;
 }
